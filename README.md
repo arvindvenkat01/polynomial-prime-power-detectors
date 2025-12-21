@@ -34,7 +34,7 @@ To run the code and reproduce the verification results, you will need to have Py
 ### 1. Clone this repository:
 
 ```bash
-git clone [https://github.com/](https://github.com/)[YourUsername]/prime-power-detectors.git
+git clone https://github.com/arvindvenkat01/polynomial-prime-power-detectors
 cd prime-power-detectors
 ```
 
