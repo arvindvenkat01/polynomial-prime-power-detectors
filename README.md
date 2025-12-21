@@ -2,8 +2,13 @@
 
 **Author**: Arvind N. Venkat
 
-This work is associated with the paper regarding the detection of prime powers using partition-theoretic modular forms.
+This work is associated with the paper regarding the detection of prime powers using partition-theoretic modular forms and has been archived and assigned a permanent identifier on Zenodo:
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18005216.svg)](https://doi.org/10.5281/zenodo.18005216)
+
+### Pre-print:
+* **DOI** - 10.5281/zenodo.18005216
+* **URL** - https://zenodo.org/records/18005216
 
 ## Abstract
 
@@ -58,15 +63,19 @@ python verify_numeric.py
 ## Citation
 If you use this work, please cite the paper using the following BibTeX entry:
 
-@misc{YourName_2025,
-  author = {Lastname, Firstname},
-  title = {Polynomial Detectors for Prime Powers via Partition-Theoretic Modular Forms},
-  year = {2025},
-  publisher = {Zenodo},
-  version = {v1.0},
-  doi = {10.5281/zenodo.XXXXXX},
-  url = {[https://doi.org/10.5281/zenodo.XXXXXX](https://doi.org/10.5281/zenodo.XXXXXX)}
+@misc{naladiga_venkat_2025_18005216,
+  author       = {Naladiga Venkat, Arvind},
+  title        = {Polynomial Detectors of Prime Powers:  Universal
+                   and Recursive Identities for MacMahon Partition
+                   Functions
+                  },
+  month        = dec,
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.18005216},
+  url          = {https://doi.org/10.5281/zenodo.18005216},
 }
+
 
 
 ---
