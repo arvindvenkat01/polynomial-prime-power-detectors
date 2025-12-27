@@ -21,6 +21,9 @@ We present a computational verification of a hierarchy of polynomial identities 
 * `1_results_verify_numeric.txt` : The execution log containing the summary of the numerical scan, false positive checks, and performance metrics.
 * `2_verify_symbolic.py` : A computer algebra script (using SymPy) that symbolically expands the modular form identities to prove they vanish exactly on the target prime power sets.
 * `2_results_verify_symbolic.txt` : The generated output log confirming the algebraic proofs for detectors $p^2$ through $p^6$.
+* `3_verify_exact.py`: Cross-validation script with pure Python with arbitrary-precision integers just to confirm no overflow artifacts in primary implementation. Validates master formulas directly: (M1-1)^k == n*(M1-n)^k.
+* `3_results_verify_exact.txt`: Output of the cross-validation script.
+
 
 ## Prerequisites
 
@@ -51,13 +54,19 @@ pip install sympy numpy
 To run the Symbolic Verification (Algebraic Proofs):
 
 ```bash
-python verify_symbolic.py
+python 2_verify_symbolic.py
 ```
 
 To run the Numerical Verification (Sieve up to 200M):
 
 ```bash
-python verify_numeric.py
+python 1_verify_numeric.py
+```
+
+To run the Cross-Validation of the master formula directly (Note: uses Python int and is extremely slow):
+
+```bash
+python 3_verify_exact.py
 ```
 
 ## Citation
