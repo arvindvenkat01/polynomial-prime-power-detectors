@@ -4,11 +4,11 @@
 
 This work is associated with the paper regarding the detection of prime powers using partition-theoretic modular forms and has been archived and assigned a permanent identifier on Zenodo:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18005216.svg)](https://doi.org/10.5281/zenodo.18005216)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18067765.svg)](https://doi.org/10.5281/zenodo.18067765)
 
 ### Pre-print:
-* **DOI** - 10.5281/zenodo.18005216
-* **URL** - https://zenodo.org/records/18005216
+* **DOI** - 10.5281/zenodo.18067765
+* **URL** - https://zenodo.org/records/18067765
 
 ## Abstract
 
@@ -72,17 +72,17 @@ python 3_verify_exact.py
 ## Citation
 If you use this work, please cite the paper using the following BibTeX entry:
 
-@misc{naladiga_venkat_2025_18005216,
+@misc{naladiga_venkat_2025_18067765,
   author       = {Naladiga Venkat, Arvind},
-  title        = {Polynomial Detectors of Prime Powers:  Universal
-                   and Recursive Identities for MacMahon Partition
-                   Functions
+  title        = {Prime Power Detection via Quasimodular Forms: The
+                   Binomial Master Theorem and Universal Invariants
                   },
   month        = dec,
   year         = 2025,
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.18005216},
-  url          = {https://doi.org/10.5281/zenodo.18005216},
+  version      = {v2},
+  doi          = {10.5281/zenodo.18067765},
+  url          = {https://doi.org/10.5281/zenodo.18067765},
 }
 
 
