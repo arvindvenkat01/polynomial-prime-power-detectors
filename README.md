@@ -1,8 +1,8 @@
-# Polynomial Prime-Power Detectors
+# Prime Power Detection via Quasimodular Polynomials
 
 **Author**: Arvind N. Venkat
 
-This work is associated with the paper regarding the detection of prime powers using partition-theoretic modular forms and has been archived and assigned a permanent identifier on Zenodo:
+This repository contains the reference implementation and verification scripts associated with the manuscript **"Prime Power Detection via Quasimodular Polynomials: The Binomial Master Theorem and Universal Detectors"**.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18067765.svg)](https://doi.org/10.5281/zenodo.18067765)
 
@@ -12,23 +12,29 @@ This work is associated with the paper regarding the detection of prime powers u
 
 ## Abstract
 
-We present a computational verification of a hierarchy of polynomial identities that distinguish prime powers $p^k$ from composite integers. These detectors are derived from the theory of partition moments and MacMahon's modular forms ($M_1, M_2$). This repository contains the source code for both the symbolic proofs (confirming the algebraic validity of the identities) and the numerical verification (confirming the converse direction). Using a sieve algorithm for divisor sums, we provide strong empirical evidence that these polynomial identities vanish *only* on the intended prime power sets for all integers $n \le 200,000,000$.
+We extend the Craig–van Ittersum–Ono framework for prime detection to prime powers via two foundational results: the **Prime Recovery Lemma**, which reduces detection to polynomial elimination, and the **Binomial Master Theorem**, which generates explicit detectors. We further derive a **Universal Detector** $\mathcal{U}(n)$ that vanishes on all prime powers simultaneously.
+
+This repository provides the computational engine used to:
+1.  **Discover** these polynomial identities via nullspace analysis.
+2.  **Prove** them algebraically (Symbolic Verification).
+3.  **Verify** the converse direction empirically up to $N = 10^8$ (Numerical Verification).
 
 ## Repository Contents
 
+The source code is located in the `code/` directory:
 
-* `1_verify_numeric.py` : A high-performance sieve algorithm that tests the detectors against integers up to $N=200,000,000$ to empirically validate the converse direction (zero false positives).
-* `1_results_verify_numeric.txt` : The execution log containing the summary of the numerical scan, false positive checks, and performance metrics.
-* `2_verify_symbolic.py` : A computer algebra script (using SymPy) that symbolically expands the modular form identities to prove they vanish exactly on the target prime power sets.
-* `2_results_verify_symbolic.txt` : The generated output log confirming the algebraic proofs for detectors $p^2$ through $p^6$.
-* `3_verify_exact.py`: Cross-validation script with pure Python with arbitrary-precision integers just to confirm no overflow artifacts in primary implementation. Validates master formulas directly: (M1-1)^k == n*(M1-n)^k.
-* `3_results_verify_exact.txt`: Output of the cross-validation script.
+* **`verify_detectors.py`** The main verification engine. It performs two critical tasks:
+  1.  **Symbolic Proof:** Uses SymPy to algebraically prove that the detectors vanish on their target loci (e.g., verifying $\mathcal{U}(p^k) \equiv 0$).
+  2.  **Numerical Search:** Runs a high-performance sieve to check for false positives up to $N=100,000,000$.
 
+* **`1_prime_power_detector_search.py`** The discovery algorithm. It generates the training set of prime powers, constructs the Vandermonde-style matrix of MacMahon functions, and computes the nullspace to discover new detector formulas.
+
+* **`2_merge_detectors.py`** Utility script to consolidate, rank, and format the discovered formulas into LaTeX tables and Python tuples.
 
 ## Prerequisites
 
 * Python 3.8 or higher
-* Python libraries: `sympy`, `numpy`
+* Python libraries: `sympy`, `numpy`, `numba`
 
 ## Getting Started
 
@@ -38,35 +44,33 @@ To run the code and reproduce the verification results, you will need to have Py
 
 ```bash
 git clone https://github.com/arvindvenkat01/polynomial-prime-power-detectors
-cd prime-power-detectors
+cd polynomial-prime-power-detectors
 ```
 
 ### 2. Install required dependencies
 
-The symbolic verification requires sympy for algebraic manipulation, and the numeric verification may utilize numpy for array operations.
+We use numba for high-performance integer sieving and sympy for exact symbolic algebra.
 
 ```bash
-pip install sympy numpy
+pip install -r requirements.txt
 ```
 
-### 3. Run the verification scripts
+### 3. Run the verification
 
-To run the Symbolic Verification (Algebraic Proofs):
+Navigate to the code directory and run the verification engine:
 
 ```bash
-python 2_verify_symbolic.py
+cd code
+python 3_verify_detectors.py
 ```
+Output will display the status (VALID/FAIL) and the algebraic proof for each detector.
 
-To run the Numerical Verification (Sieve up to 200M):
 
-```bash
-python 1_verify_numeric.py
-```
-
-To run the Cross-Validation of the master formula directly (Note: uses Python int and is extremely slow):
+To run the Discovery Algorithm (search for new formulas):
 
 ```bash
-python 3_verify_exact.py
+cd code
+python 1_prime_power_detector_search.py
 ```
 
 ## Citation
