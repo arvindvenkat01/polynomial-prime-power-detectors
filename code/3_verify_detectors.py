@@ -1,6 +1,6 @@
 """
 ============================================================================
-MacMahon Formula Verification System v2(Optimized Production)
+MacMahon Formula Verification System v2
 ============================================================================
 Author: Arvind Venkat
 Date: 2026-01-02
