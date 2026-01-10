@@ -120,5 +120,5 @@ If you use this work, please cite the paper using the following BibTeX entry:
 
 The content of this repository is dual-licensed:
 
-- **MIT License** for `prime-cube-taxicab-verifier.py`  
+- **MIT License** for code  
 - **CC BY 4.0** (Creative Commons Attribution 4.0 International) for all other content (paper, results, README, etc.)
