@@ -4,11 +4,11 @@
 
 This repository contains the reference implementation and verification scripts associated with the manuscript **"Prime Power Detection via Quasimodular Polynomials: The Binomial Master Theorem and Universal Detectors"**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18067765.svg)](https://doi.org/10.5281/zenodo.18067765)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18207268.svg)](https://doi.org/10.5281/zenodo.18207268)
 
 ### Pre-print:
-* **DOI** - 10.5281/zenodo.18067765
-* **URL** - https://zenodo.org/records/18067765
+* **DOI** - 10.5281/zenodo.18207268
+* **URL** - https://zenodo.org/records/18207268
 
 ## Abstract
 
@@ -99,17 +99,17 @@ python 1_prime_power_detector_search.py
 ## Citation
 If you use this work, please cite the paper using the following BibTeX entry:
 
-@misc{naladiga_venkat_2025_18067765,
+@misc{naladiga_venkat_2026_18207268,
   author       = {Naladiga Venkat, Arvind},
-  title        = {Prime Power Detection via Quasimodular Forms: The
-                   Binomial Master Theorem and Universal Invariants
+  title        = {Prime Power Detection via Quasimodular
+                   Polynomials: The Binomial Master Theorem and
+                   Universal Detectors
                   },
-  month        = dec,
-  year         = 2025,
+  month        = jan,
+  year         = 2026,
   publisher    = {Zenodo},
-  version      = {v2},
-  doi          = {10.5281/zenodo.18067765},
-  url          = {https://doi.org/10.5281/zenodo.18067765},
+  doi          = {10.5281/zenodo.18207268},
+  url          = {https://doi.org/10.5281/zenodo.18207268},
 }
 
 
