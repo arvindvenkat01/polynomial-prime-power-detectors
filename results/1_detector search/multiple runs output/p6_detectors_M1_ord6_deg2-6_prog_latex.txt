@@ -1,0 +1,11 @@
+\subsection{Detectors for $p^6$}
+\begin{longtable}{l p{12cm}}
+\toprule
+\textbf{ID} & \textbf{Formula} \\
+\midrule
+\endhead
+\textbf{E6.1} & \((n^6 + n^5 + n^4 + n^3 + n^2 + n + 1) - (6n^5 + 6n^4 + 6n^3 + 6n^2 + 6n + 6)M_{1}(n) +\) \\
+& \(\quad (15n^4 + 15n^3 + 15n^2 + 15n + 15)M_{1}(n)^2 - (20n^3 + 20n^2 + 20n + 20)M_{1}(n)^3\) \\
+& \(\quad  + (15n^2 + 15n + 15)M_{1}(n)^4 - (6n + 6)M_{1}(n)^5 + 1M_{1}(n)^6\) \\
+\bottomrule
+\end{longtable}

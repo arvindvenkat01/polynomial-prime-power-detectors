@@ -1,0 +1,58 @@
+\subsection{Detectors for $p^1$}
+\begin{longtable}{l p{12cm}}
+\toprule
+\textbf{ID} & \textbf{Formula} \\
+\midrule
+\endhead
+\textbf{E1.1} & \((n + 1) - 1M_{1}(n)\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.2} & \((n + 1) + nM_{1}(n) - 1M_{1}(n)^2\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.3} & \((n^3 - 2n^2 - n + 2) - 8M_{2}(n)\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.4} & \((9n - 15)M_{2}(n) + 80M_{3}(n) - nM_{1}(n)M_{2}(n)\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.5} & \((n^3 + 3n^2 + 3n + 1) - 1M_{1}(n)^3\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.6} & \((10n - 14)M_{2}(n) + 80M_{3}(n) - 1M_{1}(n)^2M_{2}(n)\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.7} & \((n^4 - n^3 - 3n^2 + n + 2) - 8M_{1}(n)M_{2}(n)\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.8} & \((4n - 11)M_{2}(n) + (10n + 60)M_{3}(n) - 1M_{2}(n)^2\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.9} & \((21n - 60)M_{2}(n) + (50n + 320)M_{3}(n) + 10nM_{1}(n)M_{3}(n) - nM_{2}(n)^2\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.10} & \((25n - 71)M_{2}(n) + (60n + 380)M_{3}(n) + 10nM_{1}(n)M_{3}(n) - 1M_{1}(n)M_{2}(n)^2\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.11} & \((22n^4 - 29n^3 - 52n^2 + 29n + 30) + (8n^4 - 48n^3)M_{2}(n) - 640M_{1}(n)^2M_{3}(n)\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.12} & \((129n - 375)M_{2}(n) + (300n + 1980)M_{3}(n) + 90nM_{1}(n)M_{3}(n) + 80M_{2}(n)M_{3}(n) -\) \\
+& \(\quad nM_{1}(n)M_{2}(n)^2\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.13} & \((40n - 119)M_{2}(n) + (90n + 620)M_{3}(n) + 40nM_{1}(n)M_{3}(n) + (10n +\) \\
+& \(\quad 60)M_{2}(n)M_{3}(n) - 1M_{2}(n)^3\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.14} & \((201n - 600)M_{2}(n) + (450n + 3120)M_{3}(n) + 210nM_{1}(n)M_{3}(n) + (140n +\) \\
+& \(\quad 170)M_{2}(n)M_{3}(n) + 800M_{3}(n)^2 - nM_{2}(n)^3\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.15} & \((81n^5 - 91n^4 - 103n^3 + 161n^2 + 32n - 60) - 10n^5M_{1}(n) + (8n^5 - 40n^4)M_{2}(n) -\) \\
+& \(\quad 640n^4M_{3}(n) + 5120M_{1}(n)M_{2}(n)M_{3}(n)\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.16} & \((84n^3 - 7n^2 - 61n + 30) - 23n^3M_{1}(n) - (8n^3 - 72n^2)M_{2}(n) + (800n^3 -\) \\
+& \(\quad 480n^2)M_{3}(n) - 160n^3M_{1}(n)M_{3}(n) + (1280n^3 - 2560n^2)M_{2}(n)M_{3}(n) -\) \\
+& \(\quad 10240M_{2}(n)^2M_{3}(n)\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.17} & \((135n^2 + 45n - 90) - 45n^2M_{1}(n) - (24n^2 - 192n)M_{2}(n) + (2880n^2 + 960n)M_{3}(n) -\) \\
+& \(\quad 960n^2M_{1}(n)M_{3}(n) - (512n^2 - 4096n)M_{2}(n)M_{3}(n) - 40960nM_{3}(n)^2 +\) \\
+& \(\quad 40960M_{1}(n)M_{3}(n)^2\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.18} & \((135n^2 + 45n - 90) - 45n^2M_{1}(n) - (24n^2 - 192n)M_{2}(n) + (2880n^2 + 960n)M_{3}(n) -\) \\
+& \(\quad 960n^2M_{1}(n)M_{3}(n) - (512n^2 - 4096n)M_{2}(n)M_{3}(n) + (61440n^2 +\) \\
+& \(\quad 20480n)M_{3}(n)^2 - 20480n^2M_{1}(n)M_{3}(n)^2 + 163840M_{2}(n)M_{3}(n)^2\) \\
+\addlinespace[6pt] \midrule[0.1pt]
+\textbf{E1.19} & \((405n^2 + 135n - 270) - 135n^2M_{1}(n) - (72n^2 - 576n)M_{2}(n) + (8640n^2 +\) \\
+& \(\quad 2880n)M_{3}(n) - 2880n^2M_{1}(n)M_{3}(n) - (1536n^2 - 12288n)M_{2}(n)M_{3}(n) +\) \\
+& \(\quad (184320n^2 + 61440n)M_{3}(n)^2 - 61440n^2M_{1}(n)M_{3}(n)^2 - (32768n^2 -\) \\
+& \(\quad 262144n)M_{2}(n)M_{3}(n)^2 + 2621440M_{3}(n)^3\) \\
+\bottomrule
+\end{longtable}
