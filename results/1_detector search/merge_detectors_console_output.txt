@@ -1,0 +1,29 @@
+============================================================
+DETECTOR MERGE UTILITY (Fixed Parser)
+============================================================
+Found 10 files to merge:
+  - p3_detectors_M12_ord4_deg1-5_prog_readable.txt
+  - p6_detectors_M123_ord3_deg3-7_prog_readable.txt
+  - p6_detectors_M1_ord6_deg2-6_prog_readable.txt
+  - p2_detectors_M123_ord3_deg1-5_prog_readable.txt
+  - p3_detectors_M123_ord3_deg1-6_prog_readable.txt
+  - p1_detectors_M123_ord3_deg1-5_prog_readable.txt
+  - p4_detectors_M12_ord4_deg1-6_prog_readable.txt
+  - p5_detectors_M12_ord5_deg1-6_prog_readable.txt
+  - p5_detectors_M123_ord3_deg3-7_prog_readable.txt
+  - p4_detectors_M123_ord3_deg2-6_prog_readable.txt
+
+Total raw entries: 139
+
+Processing Matches:
+  p^1: 19 raw -> 19 unique
+  p^2: 18 raw -> 18 unique
+  p^3: 29 raw -> 24 unique
+  p^4: 27 raw -> 21 unique
+  p^5: 31 raw -> 29 unique
+  p^6: 15 raw -> 15 unique
+
+✅ Successfully created:
+  - master_detectors_readable.txt
+  - master_detectors_tuples.py
+  - master_appendix.tex
