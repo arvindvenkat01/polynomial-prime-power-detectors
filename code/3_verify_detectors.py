@@ -217,7 +217,7 @@ def print_progress(curr, total, t0, status=""):
 
 def run_verification(formulas):
     print(f"\n{'='*100}")
-    print(f"MacMahon Formula Verification System")
+    print(f"MacMahon Formula Verification System v2")
     print(f"Range: {N_START:,} to {N_END:,} | Count: {len(formulas)} Formulas")
     print(f"{'='*100}\n")
     
